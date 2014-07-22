@@ -6,7 +6,7 @@ export RUBY_VERSION="2.1.2"
 
 if [ ! -d "${RBENV_ROOT}" ] ; then
 
-    curl https://raw.github.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+    curl https://raw.githubusercontent.com/Seppone/openshift-rbenv-installer/master/bin/rbenv-installer | bash
 
     echo "gem: --no-rdoc --no-ri" > ${OPENSHIFT_DATA_DIR}.gemrc
 
