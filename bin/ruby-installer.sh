@@ -3,13 +3,13 @@
 echo 'Welcome in rbenv installation'
 export RBENV_ROOT="${OPENSHIFT_DATA_DIR}.rbenv"
 export RBENV_INIT="${OPENSHIFT_DATA_DIR}rbenv-init.sh"
-export RUBY_VERSION="2.1.2"
+export RUBY_VERSION="2.2.2"
 
 if [ ! -d "${RBENV_ROOT}" ] ; then
 
-    echo 'Installing ruby 2.1.2'
+    echo 'Installing ruby 2.2.2'
 
-    curl https://raw.githubusercontent.com/fesplugas/rbenv-installer/master/bin/rbenv-installer | bash
+    curl https://raw.githubusercontent.com/asartalo/openshift-rbenv-installer/0.1.1/bin/rbenv-installer | bash
 
     echo "gem: --no-rdoc --no-ri" > ${OPENSHIFT_DATA_DIR}.gemrc
 
